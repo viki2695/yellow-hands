@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body class="container">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+<div class="hide-on-med-and-up">
+<div class="fixed-action-btn horizontal click-to-toggle" style="top: 0px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href = "home.html" class="btn-floating red"><i class="material-icons">home</i></a></li>
+      <li><a href = "orphanage.html" class="btn-floating yellow darken-1"><i class="material-icons">perm_identity</i></a></li>
+      <li><a href = "donate.html" class="btn-floating green"><i class="material-icons">done</i></a></li>
+      <li><a href = "aboutus.html" class="btn-floating blue"><i class="material-icons">group_work</i></a></li>
+    </ul>
+  </div>
+  <br><br><br>
+  </div>
+<div class="hide-on-small-only">
+      <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">yellow hands</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="orphanage.html">Orphanages</a></li>
+        <li><a href="donate.html">Give</a></li>
+        <li><a href="joinus.html">AboutUs</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>direct doante</div>
+      <div class="collapsible-body"><p>Link for paytm paypal something</p></div>
+    </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i>get cash from home</div>
+        <div class="collapsible-body">
+          <div class="row">
+    <form name = "myForm" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="Door_no" type="text" class="validate">
+          <label for="Door_no">Door_no</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="street" type="text" class="validate">
+          <label for="street">Street</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="area" type="text" class="validate">
+          <label for="area">Area</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="pincode" type="number" class="validate">
+          <label for="pincode">Pincode</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="phone" type="number" class="validate">
+          <label for="phone">Phone</label>
+        </div>
+      </div>
+      <center><button class="btn waves-effect waves-light" type="submit" name="action" onclick="formValidate()">Submit
+    <i class="material-icons right">send</i>
+  </button></center>
+  <script>
+    function formValidate(){
+      var a = document.forms["myForm"]["first_name"].value;
+      var b = document.forms["myForm"]["last_name"].value;
+      var c = document.forms["myForm"]["Door_no"].value;
+      var d = document.forms["myForm"]["street"].value;
+      var e = document.forms["myForm"]["area"].value;
+      var f = document.forms["myForm"]["pincode"].value;
+      var g = document.forms["myForm"]["email"].value;
+      var h = document.forms["myForm"]["phone"].value;
+      if(a==null || a==""||b==null || b==""||c==null || c==""||d==null || d==""||e==null || e==""||f==null || f==""||g==null || g==""||h==null || h==""){
+        var $toastContent = $('<span>I am toast content</span>');
+        Materialize.toast($toastContent, 5000);
+        return false;
+      }
+      else{
+        Materialize.toast('Successful', 3000, 'rounded'); 
+      }
+    }
+  </script>
+    </form>
+  </div>  
+        </div>
+      </li>
+      <li>
+         
+      <div class="collapsible-header"><i class="material-icons">place</i>Sponsored hotels package</div>
+      <div class="collapsible-body">
+        <ul class = "collapsible popout" data-collapsible = "accordion">
+          <li>
+           
+            <div class="collapsible-header red-text"><i class="material-icons prefix">restaurant</i>UNAVUKALANJIYAM</div>
+            <div class="collapsible-body">
+         <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+            
+                <table class="highlight centered">
+        <thead>
+          <tr>
+              <th data-field="name">Item Name</th>
+              <th data-field="price">Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="checkbox" id="CBiriyani" name="uk" value="10"/>
+      <label for="CBiriyani">CBiriyani</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="MBiriyani" name="uk" value="10"/>
+      <label for="MBiriyani">MBiriyani</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="SideDish" name="uk" value="10"/>
+      <label for="SideDish">SideDish</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="D" name="uk" value="10"/>
+      <label for="D">D</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="V" name="uk" value="10"/>
+      <label for="V">V</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="S" name="uk" value="10"/>
+      <label for="S">S</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="A" name="uk" value="10"/>
+      <label for="A">A</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="C" name="uk" value="10" />
+      <label for="C">C</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><center><button class="btn waves-effect waves-light" type="submit" name="action">Total</button></center></td>
+            <td><input type="text" id="tot" value=""></td>
+          </tr>
+          <script>
+           $(document).ready(function() {
+        $("button").click(function(){
+            var favorite = [];
+            $.each($("input[name='uk']:checked"), function(){            
+                favorite.push(parseInt($(this).val()));
+            });
+            var sum =favorite.reduce((a, b) => a + b, 0);
+            document.getElementById("tot").value = sum;
+        });
+    });
+          </script>
+        </tbody>
+      </table>
+            <center><button class="btn waves-effect waves-light" type="submit" name="action">Submit</button></center>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons prefix">hotel</i>hotel name</div>
+            <div class="collapsible-body">
+                 <table class="highlight centered responsive-table">
+        <thead>
+          <tr>
+              <th data-field="name">Item Name</th>
+              <th data-field="price">Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="checkbox" id="CBiriyani" name="uk" value="10"/>
+      <label for="CBiriyani">CBiriyani</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="MBiriyani" name="uk" value="10"/>
+      <label for="MBiriyani">MBiriyani</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="SideDish" name="uk" value="10"/>
+      <label for="SideDish">SideDish</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="D" name="uk" value="10"/>
+      <label for="D">D</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="V" name="uk" value="10"/>
+      <label for="V">V</label></td>
+            <td>10</td>
+          </tr><tr>
+            <td><input type="checkbox" id="S" name="uk" value="10"/>
+      <label for="S">S</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="A" name="uk" value="10"/>
+      <label for="A">A</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="C" name="uk" value="10" />
+      <label for="C">C</label></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><center><button class="btn waves-effect waves-light" type="submit" name="action">Total</button></center></td>
+            <td><input type="text" id="tot" value=""></td>
+          </tr>
+          <script>
+           $(document).ready(function() {
+        $("button").click(function(){
+            var favorite = [];
+            $.each($("input[name='uk']:checked"), function(){            
+                favorite.push(parseInt($(this).val()));
+            });
+            var sum =favorite.reduce((a, b) => a + b, 0);
+            document.getElementById("tot").value = sum;
+        });
+    });
+          </script>
+        </tbody>
+      </table>
+            <center><button class="btn waves-effect waves-light" type="submit" name="action">Submit</button></center>
+            </div>
+            
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons prefix">hotel</i>hotel name</div>
+            <div class="collapsible-body">
+                 <table class="highlight centered responsive-table">
+        <thead>
+          <tr>
+              <th data-field="name">Item Name</th>
+              <th data-field="price">Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="checkbox" id="test1" />
+      <label for="test1">Food1</label></td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="test2" />
+      <label for="test2">Food1</label></td>
+            <td>$0.87</td>
+          </tr><tr>
+            <td><input type="checkbox" id="test3" />
+      <label for="test3">Food1</label></td>
+            <td>$0.87</td>
+          </tr><tr>
+            <td><input type="checkbox" id="test4" />
+      <label for="test4">Food1</label></td>
+            <td>$0.87</td>
+          </tr><tr>
+            <td><input type="checkbox" id="test5" />
+      <label for="test5">Food1</label></td>
+            <td>$0.87</td>
+          </tr><tr>
+            <td><input type="checkbox" id="test6" />
+      <label for="test6">Food1</label></td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="test7" />
+      <label for="test7">Food1</label></td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="test8" />
+      <label for="test8">Food1</label></td>
+            <td>$7.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>checked total</td>
+          </tr>
+        </tbody>
+      </table>
+            <center><button class="btn waves-effect waves-light" type="submit" name="action">Submit</button></center>
+            </div>
+            </div>
+          </li>
+        
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>other donations</div>
+      <div class="collapsible-body"><p>dressing or others</p></div>
+    </li>
+  </ul>
+  <script>
+      $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+  </script>
+
+    </body>
+  </html>

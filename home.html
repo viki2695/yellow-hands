@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <title>home</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="container">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+     <div class="hide-on-med-and-up">
+<div class="fixed-action-btn horizontal click-to-toggle" style="top: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href="home.html" class="btn-floating red"><i class="material-icons">home</i></a></li>
+      <li><a href="orphanage.html" class="btn-floating yellow darken-1"><i class="material-icons">perm_identity</i></a></li>
+      <li><a href="donate.html" class="btn-floating green"><i class="material-icons">done</i></a></li>
+      <li><a href="joinus.html" class="btn-floating blue"><i class="material-icons">group_work</i></a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="hide-on-small-only">
+      <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">yellow hands</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="orphanage.html">Orphanages</a></li>
+        <li><a href="donate.html">Give</a></li>
+        <li><a href="joinus.html">JoinUs</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h4>HELPING THE NEED WILL MAKE US STRONG!</h4>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <img src="_7.jpg."> <!-- random image -->
+        <div class="caption left-align">
+            <h4>AN EFFORT MADE FOR THE HAPPINESS OF OTHERS LIFTS ABOVE OURSELF!</h4>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <img src="2.jpg"> <!-- random image -->
+        <div class="caption right-align light blue-text text-lighten-3">
+          <h4>IF LOVING PEOPLE IS YOUR BIGGEST WEAKNESS THEN YOUR THE STRONGEST PERSON IN THE WORLD!</h4>
+          <h5 class="light grey-text text-lighten-3">-Mother theressa </h5>
+        </div>
+      </li>
+      <li>
+        <img src="_6.jpg"> <!-- random image -->
+        <div class="caption right-align light green-text text-lighten-3">
+          <h4>HAPPINESS NEEDS NO AGE IT JUST NEEDS PEOPLE!</h4>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+         <li>
+        <img src="_8.jpg"> <!-- random image -->
+        <div class="caption center-align light purple-text text-lighten-3">
+          <h4>THE HANDS THAT HELP ARE HOLIER THAN THE LIPS THAT PRAY!</h4>
+          <h5 class="purple-text text-lighten-3">-Robert Green Ingersol</h5>
+        </div>
+      </li>
+        <li>
+        <img src="_4.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h4>DO SMALL THINGS WITH GREAT LOVE!</h4>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script>
+  $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+  // Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+</script>
+      <div>
+        <center><img src="boy.png" class="img-responsive"></center>
+    <h5 class="center-align flow-text">Welcome to yellow hands! Your Kind hearted thinking to help the needy can be fulfilled by us. Biological parent sometimes biological grandparents are legally responsible for helping children. In absence of those no named god parents can help the needy.</h5>
+  </div>
+  <div>
+    <center><img src="idea.png" class="img-responsive" width="128" height="128"></center>
+    <h5 class="center-align flow-text">Sometimes we have certain ideas to help out the orphans during certain occasions like our birthday or our loved one’s memorable day. But we don’t have any idea what are their needs, how much it cost around and how many of them were there. For that particular purpose we are here to help out to explore your needs.</h5>
+  </div>
+<div class="video-container">
+        <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+        <style>
+            body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+        </style>
+    </body>
+  </html>
+        

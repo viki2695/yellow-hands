@@ -7,7 +7,8 @@ module.exports = function (testmodel) {
                 first_name: req.body.first_name,
                 last_name: req.body.last_name,
                 email:req.body.email,
-                password:req.body.password
+                password:req.body.password,
+                phone:req.body.phone
             });
 
   };

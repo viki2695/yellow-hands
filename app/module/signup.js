@@ -1,6 +1,6 @@
 module.exports = {
     UserDetial: function (sequelize, Sequelize, modelName) {
-        var User = sequelize.define('signups', {
+        var User = sequelize.define('registration', {
             last_name: {
                 type: Sequelize.STRING,
                 // validate: {
@@ -24,6 +24,12 @@ module.exports = {
                 // validate: {
                 //     notEmpty: true
                 // }
+            },
+            phone:{
+                type:Sequelize.INTEGER,
+                //validate:{
+                    //notEmpty: true
+                //}
             }
             
         });

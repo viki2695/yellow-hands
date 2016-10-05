@@ -10,11 +10,12 @@
         data.email = mail.value;
         var pass = document.getElementById('password');
         data.password = pass.value;
-
+        var mob = document.getElementById('phone');
+        data.phone = mob.value;
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "http://localhost:3406/signup",
+            "url": "http://localhost:3406/registration",
            "method": "POST",
             "headers": {
                 "content-type": "application/json",

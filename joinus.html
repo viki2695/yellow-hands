@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="container">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/joinus.js"></script>
+      <div class="hide-on-med-and-up">
+<div class="fixed-action-btn horizontal click-to-toggle" style="top: 0px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href = "home.html" class="btn-floating red"><i class="material-icons">home</i></a></li>
+      <li><a href = "orphanage.html" class="btn-floating yellow darken-1"><i class="material-icons">perm_identity</i></a></li>
+      <li><a href = "donate.html" class="btn-floating green"><i class="material-icons">done</i></a></li>
+      <li><a href = "joinus.html" class="btn-floating blue"><i class="material-icons">group_work</i></a></li>
+    </ul>
+  </div>
+  <br><br><br>
+  </div>
+<div class="hide-on-small-only">
+      <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">yellow hands</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="orphanage.html">Orphanages</a></li>
+        <li><a href="donate.html">Give</a></li>
+        <li><a href="joinus.html">JoinUs</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<form method = "post" action = "">
+      <div class="row">
+          <div class="col s12">
+              <div class="row">
+                  <div class="input-field col s6">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">FirstName</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mail</i>
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="wrong enter clear mailid" data-success="right">Email</label>
+        </div>
+      </div>
+      </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">work</i>
+        <input id="college" type="text" class="validate">
+        <label for="college">college</label>
+      </div>
+    </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">phone</i>
+          <input id = "phone" type="number" class="validate">
+          <label for="phone">phone</label>
+        </div>
+      </div>  
+      <center><button class="btn waves-effect waves-light" type="submit" id="send_email" name="action">join
+            <i class="material-icons right">send</i>
+        </button></center>
+      </form>
+      <script>
+$(document).ready(function(){
+    var from,to,subject,text;
+    $("#send_email").click(function(){      
+        to=$("#email").val();
+        subject="3456";
+        text=$("#first_name").val();
+        $("#message").text("Sending E-mail...Please wait");
+        $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+        if(data=="sent")
+        {
+            $("#message").empty().html("
+
+Email is been sent at "+to+" . Please check inbox !
+
+");
+        }
+
+});
+    });
+});
+</script>
+    </body>
+  </html>
