@@ -31,7 +31,9 @@
     "orm": "^3.1.0",
     "sequelize": "^3.23.6",
     "sequelize-cli": "^2.4.0",
-    "validator": "^5.5.0"
+    "validator": "^5.5.0",
+    "nodemailer": "latest",
+    "express": "latest"
   },
   "devDependencies": {}
 }
